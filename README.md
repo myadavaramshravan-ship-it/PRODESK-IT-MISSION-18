@@ -6,12 +6,12 @@ A premium inventory management and analytics portal built with React + Vite on t
 
 Aura Engine is designed as an enterprise operations dashboard for managing large-scale inventory data. The application includes:
 
-- dashboard analytics and KPI cards
-- inventory workspace with search, filters, sorting, and pagination
-- responsive desktop and mobile layouts
+- Dashboard analytics and KPI cards
+- Inventory workspace with search, filters, sorting, and pagination
+- Responsive desktop and mobile layouts
 - MongoDB-backed product data model
-- aggregation-based analytics for valuation and restock insights
-- strict validation for inventory integrity rules
+- Aggregation-based analytics for valuation and restock insights
+- Strict validation for inventory integrity rules
 
 ## Tech Stack
 
@@ -33,10 +33,10 @@ Backend:
 - `client/` - React frontend application
 - `server/` - Express API and MongoDB logic
 - `server/models/` - Mongoose schema definitions
-- `server/controllers/` - inventory and analytics controllers
+- `server/controllers/` - Inventory and analytics controllers
 - `server/routes/` - API routing
 - `server/validators/` - Zod validation schema
-- `server/scripts/seedProducts.js` - mock data generator for 50,000 records
+- `server/scripts/seedProducts.js` - Mock data generator for 50,000 records
 - `vercel.json` - Vercel configuration for the client SPA
 
 ## Requirements Covered
@@ -99,7 +99,7 @@ The seeder clears the existing products collection, generates 50,000 products, i
 
 ### 4. Deploy the frontend to Vercel
 
-Import the repository into Vercel and keep the project root at the repository root. The included `vercel.json` builds the Vite client from `client/` and serves the SPA entry point.
+Import the repository into Vercel and set **Root Directory** to `client`. The included `vercel.json` uses commands relative to that directory and serves the SPA entry point.
 
 Add this Vercel environment variable:
 
@@ -111,7 +111,7 @@ Deploy the Express/MongoDB server separately and use its public `/api` URL for `
 
 ## Environment Variables
 
-Create a `.env` file inside the `server` folder with your MongoDB connection string and client URL:
+Create a `.env` file inside the `server` folder:
 
 ```env
 MONGO_URI=your_mongodb_connection_string
@@ -127,3 +127,12 @@ VITE_API_URL=http://localhost:5000/api
 
 For Vercel, set `VITE_API_URL` to the public `/api` URL of the separately deployed backend.
 
+## Notes
+
+- The frontend is expected to run on `http://localhost:5173`
+- The backend API is served on `http://localhost:5000`
+- The app is designed for a presentation-ready portal/dashboard experience for enterprise inventory management
+
+## Author
+
+Aura Engine internal project
