@@ -1,0 +1,81 @@
+:root {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #e2e8f0;
+  background: #eaf1fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+
+  --bg: #edf3fb;
+  --bg-strong: #dfeaf8;
+  --surface: #f7faff;
+  --surface-soft: #f1f5fb;
+  --surface-muted: #ebf2fb;
+  --panel-border: rgba(148, 163, 184, 0.32);
+  --text: #111827;
+  --muted: #4b5563;
+  --muted-soft: #64748b;
+  --primary: #2563eb;
+  --primary-soft: rgba(37, 99, 235, 0.1);
+  --secondary: #14b8a6;
+  --secondary-soft: rgba(20, 184, 166, 0.12);
+  --warning: #f59e0b;
+  --shadow: 0 18px 44px rgba(15, 23, 42, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f7f9fd 0%, #eef4ff 100%);
+  color: var(--text);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: var(--text);
+  letter-spacing: -0.04em;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
