@@ -127,13 +127,3 @@ VITE_API_URL=http://localhost:5000/api
 
 For Vercel, set `VITE_API_URL` to the public `/api` URL of the separately deployed backend.
 
-## Notes
-
-- The frontend is expected to run on `http://localhost:5173`
-- The backend API is served on `http://localhost:5000`
-- The app is designed for a presentation-ready portal/dashboard experience for enterprise inventory management
-
-## Author
-
-Aura Engine internal project
-#
